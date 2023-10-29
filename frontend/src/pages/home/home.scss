@@ -66,6 +66,10 @@
 .category-filter {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
     margin-top: 50px;
 }
 .not-categorie {

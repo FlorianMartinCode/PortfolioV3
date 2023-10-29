@@ -76,7 +76,7 @@ function Home() {
       <section className='main-content-projects'>
         <Slider data={Data} />
         <div className='category-filter'>
-          <label For="categorySelect"></label>
+          <label htmlFor="categorySelect">Catégorie :</label>
           <select
             id="categorySelect"
             name='category'
