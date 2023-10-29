@@ -206,7 +206,7 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 27px;
+  left: 26px;
   display: block;
   border-radius: 28px;
   background: #5fb2e4;
@@ -215,7 +215,7 @@
   transition: all 0.3s ease;
 }
 .footer-content .btn-about:hover:before {
-  width: 67%;
+  width: 68%;
   background: #5fb2e4;
 }
 .footer-content .btn-about:active {
@@ -287,9 +287,6 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   padding: 20px;
   position: relative;
   width: 80%;
@@ -353,7 +350,8 @@ p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #f0f0f0;
+  border: 1px solid #727171;
   margin: 0 5px;
   cursor: pointer;
 }
@@ -529,6 +527,10 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  background: rgba(22, 170, 255, 0.062745098);
 }
 
 body {

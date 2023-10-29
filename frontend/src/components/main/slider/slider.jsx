@@ -22,7 +22,7 @@ function Slider(id) {
     };
 
     useEffect(() => {
-        const intervalId = setInterval(nextSlide, 5000);
+        const intervalId = setInterval(nextSlide, 10000);
 
         return () => clearInterval(intervalId);
     });
