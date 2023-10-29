@@ -504,7 +504,6 @@ p {
 }
 .modal .modal-content .modal-links a:hover {
   background-color: #0056b3;
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
