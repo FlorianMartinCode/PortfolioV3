@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"
 
-import Navbar from './components/header/header'
 import Footer from './components/footer/footer'
 import Home from './pages/home/home'
 import Contact from './pages/contact/contact'
@@ -11,7 +10,6 @@ import './main.css'
 function HeaderFooter() {
   return (
     <>
-        <Navbar/>
         <Outlet />
         <Footer />
     </>

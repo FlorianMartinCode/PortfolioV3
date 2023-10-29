@@ -1,3 +1,20 @@
-// Composants de page
+// Style page
 @import './pages/home/home.scss';
 @import './pages/contact/contact.scss';
+
+// Style components
+@import './components/header/header.scss';
+@import './components/footer/footer.scss';
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}

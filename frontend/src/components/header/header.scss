@@ -1,0 +1,36 @@
+.nav-content {
+    position: fixed;
+    right: 10px;
+
+    .no-bullets {
+        list-style-type: none;
+
+        .round-link {
+            display: inline-block;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 20px;
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+          
+        .round-link-1 {
+            background-color: #FF5733;
+        }
+          
+        .round-link-2 {
+            background-color: #3498db;
+            font-size: 18px;
+            padding-left: 3px;
+        }
+          
+        .round-link-3 {
+            background-color: #27ae60;
+        }
+    }  
+}
+  
