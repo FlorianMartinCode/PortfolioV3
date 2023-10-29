@@ -1,6 +1,7 @@
 import React from 'react';
 import PhotoDeProfil from '../../assets/photo-de-profil.png'
 import Header from '../../components/header/header'
+import { Link } from 'react-router-dom';
 
 function home() {
   return (
@@ -21,11 +22,43 @@ function home() {
         </div>
       </section>
       <section className='main-content'>
-        <div>
+        <div className='left-content'>
+          <h2>À propos</h2>
+          <span>florian.martin700@gmail.com</span>
+          <span>Paris, France</span>
+          <span>26 ans</span>
+          <span>Permis B</span>
 
+          <h2>Compétences</h2>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>SASS</span>
+          <span>SEO</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Redux</span>
+
+          <h2>Réseaux sociaux</h2>
+          <Link to='https://www.linkedin.com/in/florian-martin-477748266/' target="_blank">LinkedIn</Link>
+          <Link to='https://github.com/FlorianMartinCode' target="_blank">GitHub</Link>
         </div>
-        <div>
-
+        <div className='right-content'>
+          <h2>Formation</h2>
+          <div className='info-content'>
+            <div className='title'>
+              <h3>OpenClassrooms - Intégrateur web</h3>
+              <p>Février 2023 - Décembre 2023</p>
+            </div>
+            <p>L’intégrateur Web est chargé d’intégrer les éléments visuels dans les pages d’un site web pour créer une interface harmonieuse, lisible et facilement navigable.</p>
+          </div>
+          <h2>Diplôme</h2>
+          <div className='info-content'>
+            <div className='title'>
+              <h3>Diplôme de niveau 5 (bac +2)</h3>
+              <p>Obtenue en Décembre 2023</p>
+            </div>
+          </div>
+          <p>« Développeur intégrateur web » enregistrée au Répertoire National des Certifications Professionnelles, de niveau 5 (bac +2) sur les cadres français et européens des certifications (European Qualifications Framework).</p>
         </div>
       </section>
     </main>
