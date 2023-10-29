@@ -1,0 +1,36 @@
+@import '../../utils/mixins/mixins.scss';
+
+.footer-content {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+
+    .btn-about {
+        @include button;
+    }
+    .footer-link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        a {
+            margin: 0 30px;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+        padding: 21px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .figure-footer img {
+        width: 25px;
+        height: 25px;
+    }
+}
