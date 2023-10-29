@@ -2,15 +2,16 @@ import React from 'react';
 import PhotoDeProfil from '../../assets/photo-de-profil.png'
 import Header from '../../components/header/header'
 import { Link } from 'react-router-dom';
+import Collapse from '../../components/main/collapse/collapse';
+import 'font-awesome/css/font-awesome.min.css';
+import IconRedux from '../../assets/icon-redux.png';
 
 function home() {
   return (
     <main>
       <Header />
       <section className='header-content' id='header-content'>
-        <figure>
-          <img src={PhotoDeProfil} alt="Photograpgie de Florian Martin" />
-        </figure>
+        <img src={PhotoDeProfil} alt="Photograpgie de Florian Martin" />
         <div className='description'>
           <h1>Florian MARTIN</h1>
           <p>
@@ -24,41 +25,27 @@ function home() {
       <section className='main-content'>
         <div className='left-content'>
           <h2>À propos</h2>
-          <span>florian.martin700@gmail.com</span>
-          <span>Paris, France</span>
-          <span>26 ans</span>
-          <span>Permis B</span>
+          <span><i className="fa-solid fa-envelope"></i> florian.martin700@gmail.com</span>
+          <span><i className="fa-solid fa-location-dot"></i> Paris, France</span>
+          <span><i className="fa-solid fa-cake-candles"></i> 26 ans</span>
+          <span><i className="fa-solid fa-car"></i> Permis B</span>
 
           <h2>Compétences</h2>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>SASS</span>
-          <span>SEO</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Redux</span>
+          <span><i className="fa-brands fa-html5"></i> HTML</span>
+          <span><i className="fa-brands fa-css3-alt"></i> CSS</span>
+          <span><i className="fa-brands fa-sass"></i> SASS</span>
+          <span><i className="fa-solid fa-bullseye"></i> SEO</span>
+          <span><i className="fa-brands fa-js"></i> JavaScript</span>
+          <span><i className="fa-brands fa-react"></i> React</span>
+          <span><img src={IconRedux} alt="Icone redux" className='icon-redux'/>Redux</span>
 
           <h2>Réseaux sociaux</h2>
-          <Link to='https://www.linkedin.com/in/florian-martin-477748266/' target="_blank">LinkedIn</Link>
-          <Link to='https://github.com/FlorianMartinCode' target="_blank">GitHub</Link>
+          <Link to='https://www.linkedin.com/in/florian-martin-477748266/' target="_blank"><i className="fa-brands fa-linkedin"></i> LinkedIn</Link>
+          <Link to='https://github.com/FlorianMartinCode' target="_blank"><i className="fa-brands fa-github"></i> GitHub</Link>
         </div>
         <div className='right-content'>
-          <h2>Formation</h2>
-          <div className='info-content'>
-            <div className='title'>
-              <h3>OpenClassrooms - Intégrateur web</h3>
-              <p>Février 2023 - Décembre 2023</p>
-            </div>
-            <p>L’intégrateur Web est chargé d’intégrer les éléments visuels dans les pages d’un site web pour créer une interface harmonieuse, lisible et facilement navigable.</p>
-          </div>
-          <h2>Diplôme</h2>
-          <div className='info-content'>
-            <div className='title'>
-              <h3>Diplôme de niveau 5 (bac +2)</h3>
-              <p>Obtenue en Décembre 2023</p>
-            </div>
-          </div>
-          <p>« Développeur intégrateur web » enregistrée au Répertoire National des Certifications Professionnelles, de niveau 5 (bac +2) sur les cadres français et européens des certifications (European Qualifications Framework).</p>
+          <Collapse title="Formation" />
+          <Collapse title="Diplôme" />
         </div>
       </section>
     </main>
