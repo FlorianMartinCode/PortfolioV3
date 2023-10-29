@@ -8,14 +8,28 @@ import IconRedux from '../../assets/icon-redux.png';
 import Slider from '../../components/main/slider/slider';
 import Data from '../../data/data.json';
 import Card from '../../components/main/card/card';
+import Modal from '../../components/main/modal/modal';
 
 function Home() {
   
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const filteredProjects = selectedCategory === "All" ? Data : Data.filter(project => project.category === selectedCategory);
+  const [modalData, setModalData] = useState(null);
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? Data
+      : Data.filter((project) => project.category === selectedCategory);
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
+  };
+
+  const openModal = (data) => {
+    setModalData(data);
+  };
+
+  const closeModal = () => {
+    setModalData(null);
   };
   
   return (
@@ -81,12 +95,16 @@ function Home() {
                 cover={project.cover}
                 alt={project.alt}
                 title={project.title}
+                onClick={() => openModal(project)}
               />
             ))
           ) : (
             <p className='not-categorie'>Rien à afficher</p>
           )}
         </div>
+        {modalData && (
+        <Modal data={modalData} onClose={closeModal} />
+      )}
       </section>
     </main>
   )

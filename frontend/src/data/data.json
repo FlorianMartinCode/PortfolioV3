@@ -7,7 +7,11 @@
     "alt": "Image de couverture pour Booki",
     "urlSite": "https://florianmartincode.github.io/Booki/#",
     "urlGitHub": "https://github.com/FlorianMartinCode/Booki",
-    "description": "Un projet Web passionnant avec des fonctionnalités incroyables."
+    "description": "L’entreprise Bookie souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. J'ai été chargé d'intégrer l'interface du site et le responsive avec du code HTML et CSS.",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png"
+    ]
   },
   {
     "id": 2,
@@ -17,7 +21,12 @@
     "alt": "Image de couverture pour OhMyFood",
     "urlSite": "https://florianmartincode.github.io/OhMyFood/",
     "urlGitHub": "https://github.com/FlorianMartinCode/OhMyFood",
-    "description": "L'entreprise oh my food souhaitait un site mobile first qui répertorie les menus de restaurants gastronomiques. Il fallait le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif et inclure des animations soignées !"
+    "description": "L'entreprise oh my food souhaitait un site mobile first qui répertorie les menus de restaurants gastronomiques. Il fallait le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif et inclure des animations soignées !",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/3xjr57.png"
+    ]
   },
   {
     "id": 3,
@@ -27,7 +36,12 @@
     "alt": "Image de couverture pour PrintIt",
     "urlSite": "https://florianmartincode.github.io/PrintIt/",
     "urlGitHub": "https://github.com/FlorianMartinCode/PrintIt",
-    "description": "Un autre projet Web intéressant avec une interface utilisateur conviviale."
+    "description": "Conception d'un carrousel en JavaScript pour afficher des images et du texte avec des indicateurs liés à chaque image.",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/qe7k8w.png"
+    ]
   },
   {
     "id": 4,
@@ -36,7 +50,13 @@
     "cover": "https://i.goopics.net/pt9edx.png",
     "alt": "Image de couverture pour Portfolio Sophie Bluel",
     "urlGitHub": "https://github.com/FlorianMartinCode/PortfolioArchitecteSophieBluel",
-    "description": "Conception du site portfolio d’une architecte d’intérieur. Création de la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site, la modale permettant d'uploader de nouveaux médias, ainsi que tout le lien avec le backend (appel API, gestion authentification, token, erreur)."
+    "description": "Conception du site portfolio d’une architecte d’intérieur. Création de la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site, la modale permettant d'uploader de nouveaux médias, ainsi que tout le lien avec le backend (appel API, gestion authentification, token, erreur).",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/qe7k8w.png",
+      "https://i.goopics.net/3xjr57.png"
+    ]
   },
   {
     "id": 5,
@@ -46,7 +66,14 @@
     "alt": "Image de couverture pour Kasa",
     "urlSite": "https://florianmartincode.github.io/Kasa/",
     "urlGitHub": "https://github.com/FlorianMartinCode/Kasa",
-    "description": "Nous avons donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end."
+    "description": "Nous avons donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/qe7k8w.png",
+      "https://i.goopics.net/8wmxf4.png",
+      "https://i.goopics.net/3xjr57.png"
+    ]
   },
   {
     "id": 6,
@@ -56,7 +83,11 @@
     "alt": "Image de couverture pour Nina Carducci",
     "urlSite": "https://florianmartincode.github.io/NinaCarducci/",
     "urlGitHub": "https://github.com/FlorianMartinCode/NinaCarducci",
-    "description": "La photographe Nina Carducci a demandée de faire une optimisation tant sur les performances que sur le SEO. Mettre en place le référencement local. Ajouter les metas pour les réseaux sociaux. Faire les modifications liées à l’accessibilité du site. Produire un rapport d’optimisation présentant toutes mes actions et leur impact."
+    "description": "La photographe Nina Carducci a demandée de faire une optimisation tant sur les performances que sur le SEO. Mettre en place le référencement local. Ajouter les metas pour les réseaux sociaux. Faire les modifications liées à l’accessibilité du site. Produire un rapport d’optimisation présentant toutes mes actions et leur impact.",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png"
+    ]
   },
   {
     "id": 7,
@@ -65,7 +96,12 @@
     "cover": "https://i.goopics.net/7pao8r.png",
     "alt": "Image de couverture pour 724 Events",
     "urlGitHub": "https://github.com/FlorianMartinCode/724-Events",
-    "description": "Une application mobile innovante pour les utilisateurs mobiles."
+    "description": "L’agence 724 Events souhaitait publier la nouvelle version de son site vitrine. Il s’agit d’un site one-page. Le design avait été validé, et un premier développeur freelance avait commencé l’intégration. Ce freelance a dû abandonner le projet pour raisons personnelles. Le site était fonctionnel, mais quelques bugs entravaient le bon usage par les visiteurs. 724events a donc fait appel à moi pour finaliser le travail.",
+    "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/qe7k8w.png"
+    ]
   },
   {
     "id": 8,
@@ -75,6 +111,8 @@
     "alt": "",
     "urlSite": "",
     "urlGitHub": "",
-    "description": ""
+    "description": "",
+    "logos": [
+    ]
   }
 ]
