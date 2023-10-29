@@ -17,7 +17,7 @@ function Header() {
                 </a>
             </li>
             <li>
-                <NavLink to='/contact' className="round-link round-link-3">
+                <NavLink to="mailto:florian.martin700@gmail.com" className="round-link round-link-3">
                 <i className="fa-solid fa-address-book"></i>
                 </NavLink>
             </li>
