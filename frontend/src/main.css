@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  border-bottom: solid 1px #333;
+  border-bottom: 1px solid #ddd;
 }
 .header-content .description h1 {
   font-size: 30px;
@@ -53,6 +53,16 @@
 }
 .main-content-info .right-content {
   width: 90%;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.not-categorie {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -206,6 +216,8 @@ p {
   justify-content: center;
   text-align: center;
   background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   padding: 20px;
   position: relative;
   width: 80%;
@@ -288,6 +300,7 @@ p {
     background-color: rgba(240, 240, 240, 0);
     padding: 5px;
     width: 100%;
+    border: none;
   }
   .slider .btn-left,
   .slider .btn-right {
@@ -297,6 +310,48 @@ p {
   .slider .btn-left svg,
   .slider .btn-right svg {
     padding-top: 20px;
+  }
+}
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 40%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card img {
+    max-width: 100%;
+  }
+  .card h3 {
+    font-size: 16px;
   }
 }
 * {

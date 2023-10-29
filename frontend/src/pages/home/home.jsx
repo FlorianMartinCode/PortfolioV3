@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PhotoDeProfil from '../../assets/photo-de-profil.png'
 import Header from '../../components/header/header'
 import { Link } from 'react-router-dom';
@@ -6,9 +6,18 @@ import Collapse from '../../components/main/collapse/collapse';
 import 'font-awesome/css/font-awesome.min.css';
 import IconRedux from '../../assets/icon-redux.png';
 import Slider from '../../components/main/slider/slider';
-import Data from '../../data/data.json'
+import Data from '../../data/data.json';
+import Card from '../../components/main/card/card';
 
-function home() {
+function Home() {
+  
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const filteredProjects = selectedCategory === "All" ? Data : Data.filter(project => project.category === selectedCategory);
+
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
+  };
+  
   return (
     <main>
       <Header />
@@ -52,10 +61,35 @@ function home() {
       </section>
       <section className='main-content-projects'>
         <Slider data={Data} />
+        <div className='category-filter'>
+          <label htmlFor="categorySelect"></label>
+          <select
+            id="categorySelect"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            <option value="All">Toutes les catégories</option>
+            <option value="OpenClassrooms">OpenClassrooms</option>
+            <option value="Personnel">Personnel</option>
+          </select>
+        </div>
+        <div className='card-content'>
+          {filteredProjects.length > 0 ? (
+            filteredProjects.map((project) => (
+              <Card
+                key={project.id}
+                cover={project.cover}
+                alt={project.alt}
+                title={project.title}
+              />
+            ))
+          ) : (
+            <p className='not-categorie'>Rien à afficher</p>
+          )}
+        </div>
       </section>
-     
     </main>
   )
 }
 
-export default home
+export default Home

@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        border-bottom: solid 1px #333;
+        border-bottom: 1px solid #ddd;
 
         h1 {
             font-size: 30px;
@@ -58,6 +58,15 @@
     .right-content {
         width: 90%;
     }
+}
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.not-categorie {
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
