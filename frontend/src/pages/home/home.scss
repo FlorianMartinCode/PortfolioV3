@@ -33,7 +33,7 @@
     }
 }
 
-.main-content {
+.main-content-info {
     font-family: "Roboto", sans-serif;
     display: flex;
     gap: 90px;
@@ -87,7 +87,7 @@
         }
     }
 
-    .main-content {
+    .main-content-info {
         span, a {
             font-size: 13px;
         }
@@ -125,7 +125,7 @@
         }
     }
 
-    .main-content {
+    .main-content-info {
         flex-direction: column;
         gap: 20px;
         margin: 30px;

@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Collapse from '../../components/main/collapse/collapse';
 import 'font-awesome/css/font-awesome.min.css';
 import IconRedux from '../../assets/icon-redux.png';
+import Slider from '../../components/main/slider/slider';
+import Data from '../../data/data.json'
 
 function home() {
   return (
@@ -22,7 +24,7 @@ function home() {
           </p>
         </div>
       </section>
-      <section className='main-content'>
+      <section className='main-content-info'>
         <div className='left-content'>
           <h2>À propos</h2>
           <span><i className="fa-solid fa-envelope"></i> florian.martin700@gmail.com</span>
@@ -48,6 +50,10 @@ function home() {
           <Collapse title="Diplôme" />
         </div>
       </section>
+      <section className='main-content-projects'>
+        <Slider data={Data} />
+      </section>
+     
     </main>
   )
 }

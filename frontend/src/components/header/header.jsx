@@ -12,7 +12,7 @@ function Header() {
                 </a>
             </li>
             <li>
-                <a href="#header-content" className="round-link round-link-2">
+                <a href="#projets-content" className="round-link round-link-2">
                 <i className="fa-solid fa-folder-open"></i>
                 </a>
             </li>

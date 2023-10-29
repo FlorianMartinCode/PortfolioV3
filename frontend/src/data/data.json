@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "category": "OpenClassrooms",
+      "title": "Booki",
+      "cover": "https://i.goopics.net/a1hl3n.png",
+      "alt": "Image de couverture pour Booki",
+      "urlSite": "https://florianmartincode.github.io/Booki/#",
+      "urlGitHub": "https://github.com/FlorianMartinCode/Booki",
+      "description": "Un projet Web passionnant avec des fonctionnalités incroyables."
+    },
+    {
+      "id": 2,
+      "category": "OpenClassrooms",
+      "title": "OhMyFood",
+      "cover": "https://i.goopics.net/nfo43v.png",
+      "alt": "Image de couverture pour OhMyFood",
+      "urlSite": "https://florianmartincode.github.io/OhMyFood/",
+      "urlGitHub": "https://github.com/FlorianMartinCode/OhMyFood",
+      "description": "L'entreprise oh my food souhaitait un site mobile first qui répertorie les menus de restaurants gastronomiques. Il fallait le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif et inclure des animations soignées !"
+    },
+    {
+      "id": 3,
+      "category": "OpenClassrooms",
+      "title": "PrintIt",
+      "cover": "https://i.goopics.net/15qn1e.png",
+      "alt": "Image de couverture pour PrintIt",
+      "urlSite": "https://florianmartincode.github.io/PrintIt/",
+      "urlGitHub": "https://github.com/FlorianMartinCode/PrintIt",
+      "description": "Un autre projet Web intéressant avec une interface utilisateur conviviale."
+    },
+    {
+        "id": 4,
+        "category": "OpenClassrooms",
+        "title": "Portfolio Sophie Bluel",
+        "cover": "https://i.goopics.net/pt9edx.png",
+        "alt": "Image de couverture pour Portfolio Sophie Bluel",
+        "urlGitHub": "https://github.com/FlorianMartinCode/PortfolioArchitecteSophieBluel",
+        "description": "Conception du site portfolio d’une architecte d’intérieur. Création de la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site, la modale permettant d'uploader de nouveaux médias, ainsi que tout le lien avec le backend (appel API, gestion authentification, token, erreur)."
+      },
+      {
+        "id": 5,
+        "category": "OpenClassrooms",
+        "title": "Kasa",
+        "cover": "https://i.goopics.net/ss1s8r.png",
+        "alt": "Image de couverture pour Kasa",
+        "urlSite": "https://florianmartincode.github.io/Kasa/",
+        "urlGitHub": "https://github.com/FlorianMartinCode/Kasa",
+        "description": "Nous avons donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end."
+      },
+      {
+        "id": 6,
+        "category": "OpenClassrooms",
+        "title": "Nina Carducci",
+        "cover": "https://i.goopics.net/dl7qk9.png",
+        "alt": "Image de couverture pour Nina Carducci",
+        "urlSite": "https://florianmartincode.github.io/NinaCarducci/",
+        "urlGitHub": "https://github.com/FlorianMartinCode/NinaCarducci",
+        "description": "La photographe Nina Carducci a demandée de faire une optimisation tant sur les performances que sur le SEO. Mettre en place le référencement local. Ajouter les metas pour les réseaux sociaux. Faire les modifications liées à l’accessibilité du site. Produire un rapport d’optimisation présentant toutes mes actions et leur impact."
+      },
+      {
+        "id": 7,
+        "category": "OpenClassrooms",
+        "title": "724 Events",
+        "cover": "https://i.goopics.net/7pao8r.png",
+        "alt": "Image de couverture pour 724 Events",
+        "urlGitHub": "https://github.com/FlorianMartinCode/724-Events",
+        "description": "Une application mobile innovante pour les utilisateurs mobiles."
+      },
+      {
+        "id": 8,
+        "category": "OpenClassrooms",
+        "title": "ArgentBank",
+        "cover": "",
+        "alt": "",
+        "urlSite": "",
+        "urlGitHub": "",
+        "description": ""
+      }
+  ]
+  

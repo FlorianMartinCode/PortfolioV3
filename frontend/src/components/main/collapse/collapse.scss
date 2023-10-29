@@ -5,11 +5,14 @@
     cursor: pointer;
 }
 
-.info-content .title {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 5px;
-    font-size: 15px;
+.info-content {
+    margin-bottom: 50px;
+    .title {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
 }
 
 p {

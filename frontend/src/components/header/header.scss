@@ -1,7 +1,7 @@
 .nav-content {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 15px;
 
     .no-bullets {
         list-style-type: none;
@@ -33,4 +33,17 @@
             background-color: #27ae60;
         }
     }  
+}
+
+@media screen and (max-width: 768px) {
+    .nav-content {
+        right: 2px;
+
+        .no-bullets .round-link {
+            width: 25px;
+            height: 25px;
+            font-size: 15px;
+            line-height: 27px;
+        }
+    }
 }
