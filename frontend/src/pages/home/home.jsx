@@ -76,9 +76,10 @@ function Home() {
       <section className='main-content-projects'>
         <Slider data={Data} />
         <div className='category-filter'>
-          <label htmlFor="categorySelect"></label>
+          <label For="categorySelect"></label>
           <select
             id="categorySelect"
+            name='category'
             value={selectedCategory}
             onChange={handleCategoryChange}
           >

@@ -35,10 +35,10 @@ function Slider(id) {
                     <img className='cover' src={Projet.cover} alt={Projet.title}/>
                 </Link>
             </div>
-            <Link className='btn-left' to='#' onClick={prevSlide}>
+            <Link className='btn-left' to='#' onClick={prevSlide} aria-label="Flèche precedend">
                 <FontAwesomeIcon icon={faChevronLeft} />
             </Link>
-            <Link className='btn-right' to='#' onClick={nextSlide}>
+            <Link className='btn-right' to='#' onClick={nextSlide} aria-label="Flèche suivant">
                 <FontAwesomeIcon icon={faChevronRight} />
             </Link>
             <ul className='bulletpoints'>
