@@ -90,7 +90,7 @@ function Home() {
         </div>
         <div className='card-content'>
           {filteredProjects.length > 0 ? (
-            filteredProjects.map((project) => (
+            filteredProjects.sort((a, b) => b.id - a.id).map((project) => (
               <Card
                 key={project.id}
                 cover={project.cover}
