@@ -371,16 +371,16 @@ p {
     background-color: rgba(240, 240, 240, 0);
     padding: 5px;
     width: 100%;
-    border: none;
   }
   .slider .btn-left,
   .slider .btn-right {
     background-color: rgba(0, 87, 179, 0);
     color: black;
+    top: 55%;
   }
-  .slider .btn-left svg,
-  .slider .btn-right svg {
-    padding-top: 20px;
+  .slider .btn-left:hover,
+  .slider .btn-right:hover {
+    background-color: rgba(0, 87, 179, 0);
   }
 }
 .card-content {
