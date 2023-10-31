@@ -28,7 +28,7 @@ function Slider(id) {
     });
 
     return (
-        <section className="slider" id='projets-content'>
+        <div className="slider" id='projets-content'>
             <h2>Projets</h2>
             <div className='slider-link'>
                 <Link to={Projet.urlSite || Projet.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ function Slider(id) {
                     />
                 ))}
             </ul>
-        </section>
+        </div>
     );
 }
 

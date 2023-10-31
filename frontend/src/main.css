@@ -33,11 +33,10 @@
 .main-content-info {
   font-family: "Roboto", sans-serif;
   display: flex;
-  gap: 90px;
   margin-top: 30px;
 }
 .main-content-info .left-content {
-  width: 50%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -94,6 +93,9 @@
   }
   .header-content .description p .colored-letter {
     font-size: 22px;
+  }
+  .main-content-info .left-content {
+    width: 50%;
   }
   .main-content-info span, .main-content-info a {
     font-size: 13px;
@@ -258,7 +260,6 @@
 .info-content .title {
   display: flex;
   gap: 10px;
-  margin-bottom: 5px;
   font-size: 15px;
 }
 

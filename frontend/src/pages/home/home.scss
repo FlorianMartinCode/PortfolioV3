@@ -36,11 +36,10 @@
 .main-content-info {
     font-family: "Roboto", sans-serif;
     display: flex;
-    gap: 90px;
     margin-top: 30px;
 
     .left-content {
-        width: 50%;
+        width: 35%;
         display: flex;
         flex-direction: column;
 
@@ -105,6 +104,9 @@
     }
 
     .main-content-info {
+        .left-content {
+            width: 50%;
+        }
         span, a {
             font-size: 13px;
         }
