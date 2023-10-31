@@ -21,11 +21,17 @@ function Modal({ data, onClose }) {
         <button onClick={onClose} className="close-button">
           ✖
         </button>
-        <h2>{data.title}</h2>
         <div className='modal-centre'>
           <img src={data.cover} alt={data.alt} />
           <div className='desc-logo'>
-            <p>{data.description}</p>
+            <div>
+              <h2>Client</h2>
+              <p>{data.title}</p>
+            </div>
+            <div>
+              <h2>Description</h2>
+              <p>{data.description}</p>
+            </div>
             <div className="logos">
                 {data.logos.map((logo, index) => (
                 <img key={index} src={logo} alt={`Logo ${index}`} />
