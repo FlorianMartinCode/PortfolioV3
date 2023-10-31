@@ -2,7 +2,7 @@
 
 .footer-content {
     border-top: 1px solid #ddd;
-    margin-top: 50px;
+    margin: 50px 50px 0 50px;
 
     .btn-about {
         @include button;
