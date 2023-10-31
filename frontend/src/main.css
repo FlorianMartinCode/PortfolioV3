@@ -122,6 +122,7 @@
     font-size: 25px;
   }
   .header-content .description p {
+    padding: 0 0 20px 20px;
     font-size: 16px;
   }
   .header-content .description p .colored-letter {
@@ -625,7 +626,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   body {
-    margin: 0 30px;
+    margin: 0 30px 0 0;
   }
 }
 
