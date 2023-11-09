@@ -500,6 +500,7 @@ p {
   text-align: center;
 }
 .modal .modal-content .modal-centre .desc-logo .logos img {
+  min-width: 40px;
   max-width: 40px;
   height: auto;
   margin: 0 5px;
@@ -538,9 +539,14 @@ p {
   }
   .modal .modal-content .modal-centre .desc-logo {
     border-left: none;
+    margin-top: 5px;
   }
-  .modal .modal-content .modal-centre p {
+  .modal .modal-content .modal-centre .desc-logo p {
     margin-left: 0;
+  }
+  .modal .modal-content .modal-centre .desc-logo .logos img {
+    min-width: 30px;
+    max-width: 30px;
   }
   .modal .modal-content .modal-links {
     flex-direction: column;

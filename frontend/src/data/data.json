@@ -108,11 +108,15 @@
     "category": "OpenClassrooms",
     "title": "ArgentBank",
     "cover": "https://i.goopics.net/g361r9.png",
-    "alt": "",
-    "urlSite": "",
-    "urlGitHub": "",
-    "description": "",
+    "alt": "Image de couverture pour Argent Bank",
+    "urlGitHub": "https://github.com/FlorianMartinCode/ArgentBank-website",
+    "description": "Argent Bank m'a confié la mission d'implémenter le front-end du site avec React, en mettant à profit Redux pour une gestion globale efficace.",
     "logos": [
+      "https://i.goopics.net/orgwz9.png",
+      "https://i.goopics.net/1ylrgn.png",
+      "https://i.goopics.net/qe7k8w.png",
+      "https://i.goopics.net/3xjr57.png",
+      "https://i.goopics.net/uxdkd5.png"
     ]
   }
 ]
