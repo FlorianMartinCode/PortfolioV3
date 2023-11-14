@@ -6,7 +6,7 @@ import Home from './pages/home/home'
 
 import './main.css'
 
-function HeaderFooter() {
+function OutletFooter() {
   return (
     <>
         <Outlet />
@@ -19,7 +19,7 @@ function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<HeaderFooter />}>
+                <Route path="/" element={<OutletFooter />}>
                     <Route index element={<Home />} />
                 </Route>
             </Routes>

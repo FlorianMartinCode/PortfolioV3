@@ -49,6 +49,7 @@
 }
 .main-content-info .left-content a {
   color: blue;
+  width: 80px;
 }
 .main-content-info .left-content .icon-redux {
   width: 15px;
@@ -257,6 +258,9 @@
   justify-content: space-between;
   margin: 15px 0;
   cursor: pointer;
+}
+.first-title:hover {
+  color: #0d1e7a;
 }
 
 .info-content {

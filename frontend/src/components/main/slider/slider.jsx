@@ -4,7 +4,7 @@ import data from '../../../data/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-function Slider(id) {
+function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const Data = data.slice().reverse();
     const Projet = Data[currentIndex];
@@ -23,7 +23,6 @@ function Slider(id) {
 
     useEffect(() => {
         const intervalId = setInterval(nextSlide, 10000);
-
         return () => clearInterval(intervalId);
     });
 
