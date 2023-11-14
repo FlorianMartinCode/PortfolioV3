@@ -30,7 +30,7 @@ function Slider() {
         <div className="slider" id='projets-content'>
             <h2>Projets</h2>
             <div className='slider-link'>
-                <Link to={Projet.urlSite || Projet.githubUrl} target="_blank" rel="noopener noreferrer">
+                <Link to={Projet.urlSite || Projet.urlGitHub} target="_blank" rel="noopener noreferrer">
                     <img className='cover' src={Projet.cover} alt={Projet.title}/>
                 </Link>
             </div>
