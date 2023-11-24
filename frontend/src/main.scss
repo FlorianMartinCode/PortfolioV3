@@ -5,7 +5,6 @@
 @import './components/header/header.scss';
 @import './components/footer/footer.scss';
 @import './components/main/collapse/collapse.scss';
-@import './components/main/slider/slider.scss';
 @import './components//main/card/card.scss';
 @import './utils/mixins/mixins.scss';
 @import './components/main/modal/modal.scss';
@@ -20,10 +19,6 @@
 
 html {
     background: #16aaff10;
-}
-
-body {
-    // margin: 0 55px;
 }
 
 h2 {
@@ -92,11 +87,5 @@ a {
     }
     100% {
         transform: scale(0);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        // margin: 0 30px;
     }
 }

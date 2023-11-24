@@ -4,28 +4,18 @@ import Header from '../../components/header/header'
 import { Link } from 'react-router-dom';
 import Collapse from '../../components/main/collapse/collapse';
 import 'font-awesome/css/font-awesome.min.css';
-import IconRedux from '../../assets/icon-redux.png';
-import Slider from '../../components/main/slider/slider';
 import Data from '../../data/data.json';
 import Card from '../../components/main/card/card';
 import Modal from '../../components/main/modal/modal';
 
 function Home() {
   
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const collapses = Data.collapses;
+  const projects = Data.projects
   const [modalData, setModalData] = useState(null);
 
-  const filteredProjects =
-    selectedCategory === "All"
-      ? Data
-      : Data.filter((project) => project.category === selectedCategory);
-
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-  };
-
-  const openModal = (data) => {
-    setModalData(data);
+  const openModal = (projects) => {
+    setModalData(projects);
   };
 
   const closeModal = () => {
@@ -62,50 +52,32 @@ function Home() {
           <span><i className="fa-solid fa-bullseye"></i> SEO</span>
           <span><i className="fa-brands fa-js"></i> JavaScript</span>
           <span><i className="fa-brands fa-react"></i> React</span>
-          <span><img src={IconRedux} alt="Icone redux" className='icon-redux'/>Redux</span>
 
           <h2>Réseaux sociaux</h2>
           <Link to='https://www.linkedin.com/in/florian-martin-477748266/' target="_blank"><i className="fa-brands fa-linkedin"></i> LinkedIn</Link>
           <Link to='https://github.com/FlorianMartinCode' target="_blank"><i className="fa-brands fa-github"></i> GitHub</Link>
         </div>
         <div className='right-content'>
-          <Collapse title="Formation" />
-          <Collapse title="Diplôme" />
+          <Collapse title="Formation" content={collapses[0].content} />
+          <Collapse title="Diplôme" content={collapses[1].content} />
         </div>
       </section>
-      <section className='main-content-projects'>
-        <Slider data={Data} />
-        <div className='category-filter'>
-          <label htmlFor="categorySelect">Catégorie :</label>
-          <select
-            id="categorySelect"
-            name='category'
-            value={selectedCategory}
-            onChange={handleCategoryChange}
-          >
-            <option value="All">Toutes les catégories</option>
-            <option value="OpenClassrooms">OpenClassrooms</option>
-            <option value="Personnel">Personnel</option>
-          </select>
-        </div>
+      <section className='main-content-projects' id='projets-content'>
+        <h2>Projets</h2>
         <div className='card-content'>
-          {filteredProjects.length > 0 ? (
-            filteredProjects.sort((a, b) => b.id - a.id).map((project) => (
-              <Card
-                key={project.id}
-                cover={project.cover}
-                alt={project.alt}
-                title={project.title}
-                onClick={() => openModal(project)}
-              />
-            ))
-          ) : (
-            <p className='not-categorie'>Rien à afficher</p>
-          )}
+          {projects && projects.slice().reverse().map((project) => (
+            <Card
+              key={project.id}
+              cover={project.cover}
+              alt={project.alt}
+              title={project.title}
+              onClick={() => openModal(project)}
+            />
+          ))}
         </div>
         {modalData && (
-        <Modal data={modalData} onClose={closeModal} />
-      )}
+          <Modal data={modalData} onClose={closeModal} />
+        )}
       </section>
     </main>
   )

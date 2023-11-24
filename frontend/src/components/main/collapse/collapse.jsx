@@ -1,49 +1,33 @@
 import React, { useState } from 'react';
 
-function Collapse(props) {
-    const [isCollapsed, setIsCollapsed] = useState(true);
+function Collapse(collapses) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
-    const toggleCollapse = () => {
-        setIsCollapsed(!isCollapsed);
-    };
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
-    return (
-        <div className='collaspe-content'>
-            <h2 className='first-title' onClick={toggleCollapse}>
-                {props.title}
-                {isCollapsed ? (
-                    <i className="fa fa-angle-down"></i>
-                ) : (
-                    <i className="fa fa-angle-up"></i>
-                )}
-            </h2>
-            {isCollapsed && (
-                <>
-                    {props.title === "Formation" ? (
-                        <div className='info-content'>
-                            <div className='title'>
-                                <h3>OpenClassrooms - Intégrateur web</h3>
-                                <p>Février 2023 - Décembre 2023</p>
-                            </div>
-                            <p>
-                                L’intégrateur Web est chargé d’intégrer les éléments visuels dans les pages d’un site web pour créer une interface harmonieuse, lisible et facilement navigable.
-                            </p>
-                        </div>
-                    ) : props.title === "Diplôme" ? (
-                        <div className='info-content'>
-                            <div className='title'>
-                                <h3>Diplôme de niveau 5 (bac +2)</h3>
-                                <p>Obtenu en Décembre 2023</p>
-                            </div>
-                            <p>
-                                « Développeur intégrateur web » enregistré au Répertoire National des Certifications Professionnelles, de niveau 5 (bac +2) sur les cadres français et européens des certifications (European Qualifications Framework).
-                            </p>
-                        </div>
-                    ) : null}
-                </>
-            )}
+  return (
+    <div className='collapse-content'>
+      <h2 className='first-title' onClick={toggleCollapse}>
+        {collapses.title}
+        {isCollapsed ? <i className="fa fa-angle-down"></i> : <i className="fa fa-angle-up"></i>}
+      </h2>
+      {isCollapsed && (
+        <div className='info-content'>
+            {collapses.content.map((collapse, index) => (
+                <div key={index} className='title'>
+                  <h3>{collapse.title}</h3>
+                  <p>{collapse.date}</p>
+                  <div>
+                    <p>{collapse.description}</p>
+                  </div>
+                </div>
+            ))}
         </div>
-    );
+      )}
+    </div>
+  );
 }
 
 export default Collapse;

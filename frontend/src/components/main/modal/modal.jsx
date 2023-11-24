@@ -23,7 +23,7 @@ function Modal({ data, onClose }) {
         </button>
         <div className='modal-centre'>
           <img src={data.cover} alt={data.alt} />
-          <div className='desc-logo'>
+          <div className='desc-compétences'>
             <div>
               <h2>Client</h2>
               <p>{data.title}</p>
@@ -32,10 +32,10 @@ function Modal({ data, onClose }) {
               <h2>Description</h2>
               <p>{data.description}</p>
             </div>
-            <div className="logos">
-                {data.logos.map((logo, index) => (
-                <img key={index} src={logo} alt={`Logo ${index}`} />
-                ))}
+            <div className="compétences">
+              {data.compétences.map((compétence) => (
+                <img key={compétence.id} src={compétence.logo} alt={`compétences ${compétence.id}`} />
+              ))}
             </div>
           </div>
         </div>

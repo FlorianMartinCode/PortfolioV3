@@ -22,7 +22,7 @@
   
         .close-button {
             position: absolute;
-            top: 10px;
+            top: 5px;
             right: 10px;
             background: none;
             border: none;
@@ -46,12 +46,13 @@
                 object-fit: cover;
               }
             
-              .desc-logo {
+              .desc-compétences {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 padding: 0 5px;
                 border-left: solid 1px #ddd;
+                text-align: center;
 
                 h2 {
                     font-size: 16px;
@@ -62,7 +63,7 @@
                     font-size: 1rem;
                 }
             
-                .logos {
+                .compétences {
                     text-align: center;
 
                     img {
@@ -111,7 +112,7 @@
             max-width: 100%;
             padding-right: 0;
         }
-        .desc-logo {
+        .desc-compétences {
             border-left: none;
             margin-top: 5px;
 
@@ -119,7 +120,7 @@
                 margin-left: 0;
             }
 
-            .logos img {
+            .compétences img {
                 min-width: 30px;
                 max-width: 30px;
             }

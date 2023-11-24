@@ -36,14 +36,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav-content {
-        right: 2px;
-
-        .no-bullets .round-link {
-            width: 25px;
-            height: 25px;
-            font-size: 15px;
-            line-height: 27px;
-        }
+    .nav-content .no-bullets .round-link {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
     }
 }
